@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Товар — aciddetail</title>
+  <meta name="description" content="Карточка товара aciddetail — аксессуары для детейлинга из 3D-печати.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <defs>
+            <linearGradient id="lgrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#53f033"/>
+              <stop offset="1" stop-color="#e6ff2e"/>
+            </linearGradient>
+          </defs>
+          <path d="M20 2.5 L35.5 11.5 L35.5 28.5 L20 37.5 L4.5 28.5 L4.5 11.5 Z"
+                fill="none" stroke="url(#lgrad)" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M12 30 L20 10 L28 30 M15 22 L25 22"
+                fill="none" stroke="url(#lgrad)" stroke-width="2.6"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">acid<span class="logo-accent">detail</span></span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html#catalog">Каталог</a>
+        <a href="index.html#features">О нас</a>
+        <a href="index.html#delivery">Доставка</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#catalog" class="btn btn-primary">Заказать</a>
+        <button class="burger" aria-label="Меню"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PRODUCT (заполняется через main.js) ============ -->
+  <main id="productPage"></main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+              <defs>
+                <linearGradient id="lgrad2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#53f033"/>
+                  <stop offset="1" stop-color="#e6ff2e"/>
+                </linearGradient>
+              </defs>
+              <path d="M20 2.5 L35.5 11.5 L35.5 28.5 L20 37.5 L4.5 28.5 L4.5 11.5 Z"
+                    fill="none" stroke="url(#lgrad2)" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 30 L20 10 L28 30 M15 22 L25 22"
+                    fill="none" stroke="url(#lgrad2)" stroke-width="2.6"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="logo-text">acid<span class="logo-accent">detail</span></span>
+          </a>
+          <p>Аксессуары для детейлинга, напечатанные на 3D-принтере. Москва, ул. Пример, 1.</p>
+        </div>
+        <div>
+          <h4>Каталог</h4>
+          <ul>
+            <li><a href="product.html?id=microfiber-organizer">Микрофибра</a></li>
+            <li><a href="product.html?id=polishing-pad-stand">Полировка</a></li>
+            <li><a href="product.html?id=chemical-bottle-holder">Химия</a></li>
+            <li><a href="product.html?id=foam-cannon-mount">Мойка</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Информация</h4>
+          <ul>
+            <li><a href="index.html#delivery">Доставка</a></li>
+            <li><a href="index.html#delivery">Оплата</a></li>
+            <li><a href="#">Возврат</a></li>
+            <li><a href="#">Гарантия</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="mailto:hello@aciddetail.ru">hello@aciddetail.ru</a></li>
+            <li><a href="tel:+79990000000">+7 (999) 000-00-00</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 aciddetail. Все права защищены.</span>
+        <span>Сделано с ♥ и 3D-принтером</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

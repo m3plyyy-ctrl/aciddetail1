@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aciddetail — аксессуары для детейлинга из 3D-печати</title>
+  <meta name="description" content="aciddetail — органайзеры, держатели и стойки для детейлинга, напечатанные на 3D-принтере из PETG. Кислотный дизайн, доставка по РФ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <defs>
+            <linearGradient id="lgrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#53f033"/>
+              <stop offset="1" stop-color="#e6ff2e"/>
+            </linearGradient>
+          </defs>
+          <path d="M20 2.5 L35.5 11.5 L35.5 28.5 L20 37.5 L4.5 28.5 L4.5 11.5 Z"
+                fill="none" stroke="url(#lgrad)" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M12 30 L20 10 L28 30 M15 22 L25 22"
+                fill="none" stroke="url(#lgrad)" stroke-width="2.6"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">acid<span class="logo-accent">detail</span></span>
+      </a>
+
+      <nav class="nav">
+        <a href="#catalog">Каталог</a>
+        <a href="#features">О нас</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#catalog" class="btn btn-primary">Заказать</a>
+        <button class="burger" aria-label="Меню"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="pill">3D-печать · детейлинг</span>
+          <h1>Аксессуары для детейлинга, <span class="accent">напечатанные на 3D-принтере</span></h1>
+          <p>Органайзеры, держатели и стойки для вашей студии и гаража. Прочный PETG, точная геометрия, кислотный дизайн — не как у всех.</p>
+          <div class="hero-actions">
+            <a href="#catalog" class="btn btn-primary">Смотреть каталог</a>
+            <a href="#delivery" class="btn btn-ghost">Доставка и оплата</a>
+          </div>
+          <div class="hero-stats">
+            <div><b>6</b><span>моделей</span></div>
+            <div><b>PETG</b><span>материал</span></div>
+            <div><b>2–4</b><span>дня печати</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="img-placeholder">Фото / визуал</div>
+          <span class="float-tag tag-1">PETG</span>
+          <span class="float-tag tag-2">3D print</span>
+          <span class="float-tag tag-3">RU</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATALOG ============ -->
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Каталог <span class="accent">товаров</span></h2>
+            <p class="section-sub">6 позиций, которые закрывают базовые потребности детейлера. Все изделия печатаются вручную под заказ.</p>
+          </div>
+        </div>
+        <div class="grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Почему <span class="accent">aciddetail</span></h2>
+            <p class="section-sub">Мы делаем аксессуары, которые хочется поставить на видное место, а не спрятать в ящик.</p>
+          </div>
+        </div>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">◆</div>
+            <h3>PETG-печать</h3>
+            <p>Прочный, влагостойкий пластик. Не боится щелочей и растворителей из вашей химии.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <h3>Своё производство</h3>
+            <p>Печатаем под заказ. Отправляем через 2–4 дня после оплаты.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">✦</div>
+            <h3>Кислотный дизайн</h3>
+            <p>Чёрный корпус + неоновые акценты. Ваша студия больше не выглядит безлико.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">↗</div>
+            <h3>Доставка по РФ</h3>
+            <p>СДЭК, Почта России, Boxberry. Самовывоз в Москве и Санкт-Петербурге.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DELIVERY ============ -->
+    <section class="section" id="delivery">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2>Доставка и оплата</h2>
+            <p>Оплата картой или переводом после согласования заказа. Отправляем в день готовности, трек-номер приходит в течение суток.</p>
+          </div>
+          <a href="index.html#catalog" class="btn btn-primary">Выбрать товар</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+              <defs>
+                <linearGradient id="lgrad2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#53f033"/>
+                  <stop offset="1" stop-color="#e6ff2e"/>
+                </linearGradient>
+              </defs>
+              <path d="M20 2.5 L35.5 11.5 L35.5 28.5 L20 37.5 L4.5 28.5 L4.5 11.5 Z"
+                    fill="none" stroke="url(#lgrad2)" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 30 L20 10 L28 30 M15 22 L25 22"
+                    fill="none" stroke="url(#lgrad2)" stroke-width="2.6"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="logo-text">acid<span class="logo-accent">detail</span></span>
+          </a>
+          <p>Аксессуары для детейлинга, напечатанные на 3D-принтере. Москва, ул. Пример, 1.</p>
+        </div>
+        <div>
+          <h4>Каталог</h4>
+          <ul>
+            <li><a href="product.html?id=microfiber-organizer">Микрофибра</a></li>
+            <li><a href="product.html?id=polishing-pad-stand">Полировка</a></li>
+            <li><a href="product.html?id=chemical-bottle-holder">Химия</a></li>
+            <li><a href="product.html?id=foam-cannon-mount">Мойка</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Информация</h4>
+          <ul>
+            <li><a href="#delivery">Доставка</a></li>
+            <li><a href="#delivery">Оплата</a></li>
+            <li><a href="#">Возврат</a></li>
+            <li><a href="#">Гарантия</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="mailto:hello@aciddetail.ru">hello@aciddetail.ru</a></li>
+            <li><a href="tel:+79990000000">+7 (999) 000-00-00</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 aciddetail. Все права защищены.</span>
+        <span>Сделано с ♥ и 3D-принтером</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
